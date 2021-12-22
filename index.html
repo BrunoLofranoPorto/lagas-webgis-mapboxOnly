@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAGAS - WebGIS</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/lagas-logo.png">
+</head>
+<body>
+    <div id='map' style='height: 100vh; width: 100vw;'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYnJ1bm9wb3J0byIsImEiOiJja3NnMWlwMnExZzU4MnVvMjhjMGFhOWh2In0.jA7qo54WVdons-BqaLYlCw';
+        const map = new mapboxgl.Map({
+        container: 'map', 
+        style: 'mapbox://styles/mapbox/streets-v11', 
+        center: [-47.7746, -15.7696], 
+        zoom: 6
+        });
+    </script>
+    <script src='MarcadoresTD.js'></script>
+    <a href="http://lagas.unb.br/"><img src="images/lagas-logo.png" alt="logo do laboratório lagas"></a>
+    <h1 class="title">Distribuição espacial dos trabalhos defendidos <br> de membros do LAGAS</h1>
+</body>
+</html>

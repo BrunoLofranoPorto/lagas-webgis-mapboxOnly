@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+button{
+    border-color: black;
+    border-style: solid;
+    border-width: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 150px;
+    height: 75px;
+    font-size: 1.1em;
+    position: relative;
+    left: 55px;
+}
+button.isSelected{
+    border-style: solid;
+    border-color: greenyellow;
+    background-color: greenyellow;
+    color: black;
+}
+img{
+    max-width: 200px;
+    max-height: 200px;
+    margin: 5px 5px 0px 0px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(5px);
+    border-radius: 2px;
+}
+.title{
+    position: absolute;
+    left: 26vw;
+    top: 0;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    color: #008444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(112, 128, 144, 0.500);
+}
+
+/*text-shadow: 2px 2px slategray;
