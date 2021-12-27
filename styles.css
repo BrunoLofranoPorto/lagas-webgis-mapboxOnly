@@ -45,4 +45,15 @@ img{
     text-shadow: 2px 2px rgba(112, 128, 144, 0.500);
 }
 
-/*text-shadow: 2px 2px slategray;
+@media screen and (max-width: 500px){
+    img{
+        position: absolute;
+        left: 0;
+        top: 75vh;
+    }
+    .title{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
